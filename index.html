@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Dev Contábil</title>
+</head>
+
+<body>
+    <div class="caixa-superior">
+
+        <div class="cabecalho">
+            <h2 class="titulo-cabecalho">Dev Contábil</h2>
+            <a href="#titulo-inferior" class="link-cabecalho">Quem somos</a>
+            <a href="#titulo-meio" class="link-cabecalho">Serviços</a>
+            <a class="link-cabecalho" onclick="form()" >Contato</a>
+        </div>
+        <h1>Dev Contábil</h1>
+        <form id="formulario-contato" action="https://formsubmit.co/rico.roger@gmail.com" method="POST">
+            <h3 class="titulo-formulario">Entre em Contato</h3>
+            <label>
+                Nome
+                <input type="text" name="nome" placeholder="Digite seu Nome" required />
+            </label>
+            <label>
+                E-mail
+                <input type="email" name="email" placeholder="Digite seu E-mail" required />
+            </label>
+            <label>
+                Fale Conosco
+                <textarea name="info" placeholder="Como podemos ajudá-lo?"></textarea>
+            </label>
+
+            <button type="submit" >Enviar</button>
+        </form>
+    </div>
+    <h2 id="titulo-meio"> Nossos Serviços </h2>
+    <div class="caixa-central">
+
+        <div class="card">
+            <h3 class="titulo-card">Contabilidade</h3>
+            <ul>
+                <li>Primeiro Item</li>
+                <li>Segundo Item</li>
+                <li>Terceiro Item</li>
+                <li>Quarto Item</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3 class="titulo-card">Negócios</h3>
+            <ul>
+                <li>Primeiro Item</li>
+                <li>Segundo Item</li>
+                <li>Terceiro Item</li>
+                <li>Quarto Item</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3 class="titulo-card">Finanças Pessoais</h3>
+            <ul>
+                <li>Primeiro Item</li>
+                <li>Segundo Item</li>
+                <li>Terceiro Item</li>
+                <li>Quarto Item</li>
+            </ul>
+        </div>
+    </div>
+    <div class="caixa-inferior">
+        <h2 id="titulo-inferior">Sobre Nós</h2>
+        <p class="paragrafo">Somos um  escritório moderno, versátil e dinâmico, cujo objetivo é levar soluções criativas e eficazes aos clientes, tendo como sócios o Dr. Kleber Bissolatti e a Dra. Monique Antonacci, profissionais multidisciplinares com sólida formação e vasta experiência em questões de grande complexidade.
+
+            Peliciotti Advocacia é um escritório que preza pela qualidade dos serviços jurídicos, com amplo conhecimento e experiência de atuação. Contamos com uma equipe de profissionais experientes para atender nossos clientes de forma personalizada, contemplando as diversas áreas do Direito. 
+            
+            Nosso escritório está comprometido em ter os melhores profissionais, advogados, colaboradores e parceiros, empenhados em oferecer seus serviços com grande sensibilidade e comprometimento, com a mais alta competência e comunicação com os clientes.
+            
+            Praticamos a lei com vocação e paixão pela profissão para responder com excelência à confiança depositada em nós pelos nossos clientes.
+            
+            </p>
+    </div>
+
+</body>
+<script>
+ 
+    let formulario = document.getElementById("formulario-contato")
+  
+    
+    function form() {
+        formulario.className = "mostrar-formulario"
+
+    }
+</script>
+    
+
+</html>
